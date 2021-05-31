@@ -6,5 +6,5 @@ Get Network Info Using Python
  
   For run this file 
   
-  Type: python3 getip.py
+  Type: python3  getip.py
  
