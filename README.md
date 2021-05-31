@@ -8,3 +8,6 @@ Get Network Info Using Python
   
   Type: ```python3  getip.py```
  
+ If you have problem send me Dm or open ticket on my server
+ 
+ Discord server: https://discord.gg/s3cfPPsJfv
