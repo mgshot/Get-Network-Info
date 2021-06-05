@@ -18,7 +18,6 @@ public_ip = requests.get("https://api.ipify.org").text
 ip_loc = requests.get("https://api.iplocation.net/?ip="+public_ip).json()
 name = (ip_loc['country_name'])
 name_code = (ip_loc['country_code2'])
-
 print(Fore.GREEN+'++++++++++++++++++++++++')
 print(f"Local Ip: {local_ip}")
 print('++++++++++++++++++++++++')
@@ -26,10 +25,22 @@ print(f"Public Ip: {public_ip}")
 print('++++++++++++++++++++++++')
 print(f"Country Name: ({name_code}):{name}")
 print('++++++++++++++++++++++++')
-print('Download Speed:', st.download(),)
+print("Test Download & Upload Speed...")
 print('++++++++++++++++++++++++')
-print('Upload Speed:', st.upload())
+dn = st.download()/1024/1024
+print(f'Download Speed: {dn:.2f} Mbit/s')
 print('++++++++++++++++++++++++')
+up = st.upload()/1024/1024
+print(f'Upload Speed: {up:.2f} Mbit/s')
+print('++++++++++++++++++++++++')
+ping = st.results.ping
+print(f'Your Ping Speed Is: {ping} Ms')
+print('++++++++++++++++++++++++')
+
+
+
+
+
 
 
 
